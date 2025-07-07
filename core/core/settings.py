@@ -152,7 +152,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'accounts.User'
 
 
-
+CORS_ALLOWED_ORIGINS = [
+    "https://chat-app1-phi.vercel.app"
+]
 
 
 CORS_ALLOW_CREDENTIALS = True
