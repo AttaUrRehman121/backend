@@ -1,5 +1,1 @@
-from core.asgi import application
-
-
-
-
+from core.asgi import application as app
