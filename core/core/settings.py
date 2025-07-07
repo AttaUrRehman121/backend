@@ -153,7 +153,9 @@ AUTH_USER_MODEL = 'accounts.User'
 
 
 CORS_ALLOWED_ORIGINS = [
-    "https://chat-app1-phi.vercel.app"
+    "https://chat-app1-phi.vercel.app/",
+    "https://backend-seven-amber-92.vercel.app/"
+    
 ]
 
 
