@@ -1,27 +1,15 @@
 {
-    "version": 1,
     "builds": [
         {
-            "src": "core/asgi. py",
+            "src": "core/asgi.py",
             "use": "@vercel/python",
             "config": {
                 "maxLambdaSize": "15mb",
-                "runtime": "python3.12"
-            }
-        },
-        {
-            "src": "build_files.sh",
-            "use": "@vercel/static-build",
-            "config": {
-                "distDir": "staticfiles"
+                "runtime": "python3.11.3"
             }
         }
     ],
     "routes": [
-        {
-            "src": "/static/(.*)",
-            "dest": "/static/$1"
-        },
         {
             "src": "/(.*)",
             "dest": "core/asgi.py"
