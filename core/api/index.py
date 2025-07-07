@@ -1,10 +1,8 @@
-from core.asgi import application 
+from core.asgi import application as app  # Vercel looks for 'app'
 
-
-app = application
 
 handlers = {
-    "http": application,
-    "websocket": application,
-    "lifespan": application,
+    "http": app,
+    "websocket": app,
+    "lifespan": app,
 }
