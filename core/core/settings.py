@@ -165,7 +165,9 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOW_CREDENTIALS = True
 
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://backend-production-5b2b.up.railway.app",
+]
 
 
 REST_FRAMEWORK = {
