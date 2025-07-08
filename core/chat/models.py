@@ -14,7 +14,7 @@ class ChatRoom(models.Model):
     
     
 class Message(models.Model):
-    user = models.TextField(("User"), default="Anonymous")
+    user = models.TextField(("User"))
     chat_room = models.ForeignKey(ChatRoom, on_delete=models.CASCADE, related_name='messages')
     content = models.TextField()
     timestamp = models.DateTimeField(auto_now_add=True)
