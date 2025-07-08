@@ -26,7 +26,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
     async def receive(self, text_data):
         data = json.loads(text_data)
         message = data["message"]
-        username = data.get("username", "Anonymous")
+        username = data.get("username")
         timestamp = data.get("timestamp", "")
 
         
